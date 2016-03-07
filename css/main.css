@@ -15,11 +15,19 @@
   left: 0px;
 }
 
-h1 {
+.h1-main-title {
   font-family: 'Arcus';
   color: #fff;
   font-size: 40px;
   text-align: center;
+}
+
+.h1-green-title {
+  font-family: 'Arcus';
+  color: #aaca0e;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 h2 {
@@ -197,4 +205,11 @@ h2 {
 #problems-container{
   position: absolute;
   transform: translate(10%, 30%);
+}
+
+#client-words-slider-section{
+  margin-top: 40px;
+  margin-left: 30%;
+  height: auto;
+  width: 40%;
 }
