@@ -4,47 +4,112 @@
 
   <head>
     <meta charset="UTF-8">
-    <link href="css/main.css" rel="stylesheet"/>
+    <link href="dependencies/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic,700,700italic,300italic' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet"/>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
   </head>
 
   <body>
     <div id="page-content">
 
-      <div class="full-img-container">
+      <div id="how-we-help-bg" class="full-page-bg">
 
         <img src="img/logo.svg" id="main-logo">
 
-        <div class="title-over-img">
+        <div class="title-over-img align-center-of-parent" >
           <h1>Precisa melhorar o desempenho e </br> resultados da sua equipe de vendas?</h1>
         </div>
 
-        <button type="button">TEMOS A SOLUÇÃO</button>
+        <a href="#more-info">
+          <button class="landing-page-green-button">TEMOS A SOLUÇÃO</button>
+        </a>
+      </div>
 
-        <div class="big-img-container">
-            <img src="img/como_podemos_ajudar.jpg" class="top-main-img">
+      <div id="more-info" class="full-page-bg">
+        <div class="align-center-of-parent">
+          <h2 class="text-center">
+            A Experimental oferece o serviço de Gestão Comercial para o </br>
+            micro e pequeno negócio, o qual visa melhorar a </br>
+            eficiência da sua área comercial.</br>
+          </h2>
+
+          <h3 class="text-center text-gray-small">
+            Atuamos treinando sua equipe comercial a partir das metodologias</br>
+            mais bem sucedidas de vendas, além de padronizar o atendimento da</br>
+            sua equipe a fim de alcançar os objetivos traçados para o negócio.</br>
+          </h3>
         </div>
+      </div>
+
+      <div class="full-page-bg" id="which-problem-bg">
+        <div class="title-over-img" id="align-center-img-big-text-02">
+          <h1>Quais problemas serão resolvidos?</h1>
+        </div>
+
+      <div id="problems-container">
+        <div class="icons-problems-container">
+            <img src="img/icons-svg/hand-graph.svg" alt="Falta de eficiência" class="img-problems">
+          <div class="problem-description">Falta de eficiência e eficácia da equipe de vendas</div>
+        </div>
+
+        <div class="icons-problems-container">
+            <img src="img/icons-svg/engine.svg" alt="Falta de padronização" class="img-problems">
+          <div class="problem-description">Falta de padronização do atendimento entre todos os funcionários e filiais</div>
+        </div>
+
+        <div class="icons-problems-container">
+            <img src="img/icons-svg/money.svg" alt="Falta de organização do setor comercial" class="img-problems">
+          <div class="problem-description">Falta de organização e direcionamento do setor comercial.</div>
+        </div>
+      </div>
 
       </div>
 
-      <div class="about-text-container">
+      <div class="full-page-bg" id="our-services-bg">
+      </div>
 
-        <h2>
-          A Experimental oferece o serviço de Gestão Comercial para o </br>
-          micro e pequeno negócio, o qual visa melhorar a </br>
-          eficiência da sua área comercial.</br>
-        </h2>
-
-        <h3>
-          Atuamos treinando sua equipe comercial a partir das metodologias</br>
-          mais bem sucedidas de vendas, além de padronizar o atendimento da</br>
-          sua equipe a fim de alcançar os objetivos traçados para o negócio.</br>
+      <div style="position:relative;">
+        <img src="img/nossa-consultoria-bg.jpg" class="full-width-img">
+        <div class="title-over-img" id="align-center-img-big-text">
+          <h1>Nossa Consultoria</h1>
+        </div>
+        <h3 class="text-center-white-medium-size medium-text-white">
+          Focada em gestão e inovação para micro e pequenas empresas,</br>
+          a Experimental atua como especialista em auxiliar empreendedores</br>
+          a solucionar seus desafios de negócios.
         </h3>
+      </div>
 
+      <div class="full-page-bg" id="client-words">
+      </div>
+
+      <div style="position:relative;">
+        <img src="img/entre_em_contato.jpg" class="full-width-img">
+        <div class="title-over-img" id="align-with-text-button">
+          <h1>Qual o desafio do seu negócio?</h1>
+        </div>
+        <h3 class="text-center-white small-text-white">
+          Vamos trocar uma ideia de empreendedor para empreendedor
+        </h3>
+        <a target="_blank" href="http://experimental.cc/consultoria/contato/">
+          <button class="landing-page-green-button">ENTRE EM CONTATO</button>
+        </a>
       </div>
 
     </div>
+
+    <script src="dependencies/jquery/jquery-1.11.3.min.js"></script>
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('a[href*=#]').on('click', function(event){
+          event.preventDefault();
+          $('#page-content').animate({scrollTop:$(this.hash).offset().top}, 1000);
+      });
+    });
+    </script>
   </body>
 
 </html>

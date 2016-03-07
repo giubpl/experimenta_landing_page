@@ -29,7 +29,7 @@ h2 {
   text-align: center;
 }
 
-h3 {
+.text-gray-small {
   font-family: 'Roboto',sans-serif;;
   color: #999;
   font-size: 15px;
@@ -37,29 +37,24 @@ h3 {
   text-align: center;
 }
 
-button{
+.landing-page-green-button {
   background-color: #a5c700; /* Green */
   border: none;
   color: white;
   padding: 16px 35px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   border-radius: 3px;
   position: absolute;
   top: 70%;
   left: 50%;
-  opacity: 1;
   transform: translate(-50%, -50%);
-  z-index: 2;
 }
 
-button:hover{
+.landing-page-green-button:hover{
   background-color: #90ae00;
 }
-
 
 #main-logo{
   position: absolute;
@@ -72,18 +67,16 @@ button:hover{
   z-index: 2;
 }
 
-.title-over-img{
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.title-over-img {
   opacity: 1;
-  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
-.full-img-container{
-  width: 100%;
-  height: 100%;
+.align-center-of-parent {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .top-main-img{
@@ -91,9 +84,117 @@ button:hover{
   height: auto;
 }
 
-.about-text-container{
+.full-page-bg{
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.full-width-img{
   width: 100%;
   height: auto;
-  margin-top: 30%;
-  margin-bottom: 30%;
+  position: relative;
+}
+
+.text-center-white{
+  font-family: 'Roboto',sans-serif;;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.text-center-white-medium-size{
+  font-family: 'Roboto',sans-serif;;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.icons-problems-container{
+  margin: 70px;
+  float: left;
+  width: 200px;
+  height: 220px;
+}
+
+.img-problems{
+  width: 150px;
+  height: auto;
+  margin-left: 30px;
+  margin-top: 50%;
+}
+
+.problem-description{
+  font-family: "Roboto",sans-serif;
+  font-size: 20px;
+  color:#fff;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+#how-we-help-bg{
+  background-image: url("../img/como_podemos_ajudar.jpg");
+}
+
+#more-info{
+  background-image: url("../img/backgrond_text_01.jpg");
+}
+
+#which-problem-bg{
+  background-image: url("../img/backgrond_problemas_01.jpg");
+}
+
+#our-services-bg{
+  background-image: url("../img/sobre_empresa.jpg");
+}
+
+#client-words{
+  background-image: url("../img/depoimentos_dos_clientes.jpg");
+}
+
+#align-with-text-button{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+.small-text-white{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+.medium-text-white{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#align-center-img-big-text{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+#align-center-img-big-text-02{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+
+#problems-container{
+  position: absolute;
+  transform: translate(10%, 30%);
 }
